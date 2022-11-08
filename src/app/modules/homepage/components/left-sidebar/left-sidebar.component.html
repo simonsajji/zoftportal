@@ -1,0 +1,78 @@
+<div class="left-parent p-b-2 bg-gray">
+    <div class="left-menu box-view m-t-10 p-b-10 bg-white p-t-15">
+        <div class="d-flex align-center f-s-14 f-w-500  c-pointer"
+            [ngClass]="selectedPage === 'home' ? 'message-head' : 'left-items'"
+              >
+              <i class="fa fa-home"></i>
+            <span class="p-l-5"> Home</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="selectedPage === 'tasks' ? 'message-head' : 'left-items'">
+            <i class="fa-regular fa-file-lines p-l-2"></i>
+            <span class="p-l-8"> Projects </span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa fa-people-group"></i>
+            <span class="p-l-5"> Team</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <span class="p-l-8"> Activities</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-trophy"></i>
+            <span class="p-l-5"> Achievements</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-regular fa-calendar-xmark"></i>
+            <span class="p-l-8"> Leave</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-snowman "></i>
+            <span class="p-l-5"> Holidays</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="p-l-8"> Calendar</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-calendar-week"></i>
+            <span class="p-l-5"> Time Sheet</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <span class="p-l-8"> Tickets</span>
+        </div>
+        <div class="d-flex align-center f-s-14 f-w-500 c-pointer"
+            [ngClass]="(upcomingActive || receivedActive) ? 'message-head' : 'left-items'">
+            <i class="fa-solid fa-list-check"></i>
+            <span class="p-l-6"> Tasks</span>
+        </div>
+        <!-- <ng-container *ngIf="upcomingActive || receivedActive">
+            <div class="d-flex align-center f-s-14 c-pointer m-l-30 m-t-5 f-w-500"
+                [ngClass]="receivedActive ? 'c-grey' : null">
+                <img src="/assets/icons/Icon awesome-box.png" width="17px" height="16px" class="p-b-3 p-t-0">
+                <span class="p-l-5"> Received </span>
+            </div>
+            <div class="d-flex align-center f-s-14 c-pointer m-l-30 m-t-5 f-w-500"
+                [ngClass]="upcomingActive ? 'c-grey' : null">
+                <img src="/assets/icons/Icon awesome-box.png" width="17px" height="16px" class="p-b-3 p-t-0">
+                <span class="p-l-5"> Upcoming </span>
+            </div>
+        </ng-container> -->
+    </div>
+    <div class="srn-detail m-t-20 box-view bg-white">
+        <!-- <app-srn-product-details></app-srn-product-details> -->
+    </div>
+    <div class="my-task m-t-20 box-view bg-white">
+        <!-- <app-my-tasks [stationId]="stationId" (myTaskStatus)="changeMyTaskStatus($event)"></app-my-tasks> -->
+    </div>
+</div>

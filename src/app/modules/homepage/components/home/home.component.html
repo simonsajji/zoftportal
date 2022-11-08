@@ -1,0 +1,19 @@
+<div class="row container-fluid m-0 p-l-0 p-r-0 " style="box-sizing: border-box; width: 100%;">
+    <div class="header-parent m-l-0 m-r-0 ">
+        <!-- <app-header [stationName]="'RECEIVING STATION'"></app-header> -->
+        Zoft Portal
+    </div>
+</div>
+<div class="body-area bg-main">
+    <div class="row container-fluid parent-background m-0 p-l-0 p-r-0 p-b-0 p-t-0 h-100">
+        <div class="col-md-3  p-r-0">
+            <app-left-sidebar></app-left-sidebar>
+        </div>
+        <div class="col-md-6 p-l-0 p-r-0">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="col-md-3 p-l-5 m-t-0 p-t-0 p-b-0 m-b-0">
+            <app-right-sidebar ></app-right-sidebar>
+        </div>
+    </div>
+</div>
